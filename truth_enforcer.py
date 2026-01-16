@@ -1,4 +1,3 @@
-%%writefile truth_enforcer.py
 import numpy as np
 import re
 import logging
@@ -19,6 +18,8 @@ class TruthEnforcer:
     A Topological Semantic Consistency Engine.
     
     Uses Persistent Homology (H0) to calculate the 'Semantic Mass' of a text block.
+    High Entropy = Semantic Drift / Hallucination.
+    Low Entropy = High Focus / Logical Consistency.
     """
     
     def __init__(self, model_name='all-MiniLM-L6-v2'):
@@ -72,7 +73,7 @@ class TruthEnforcer:
             # 4. The Verdict Logic
             mass_score = round(entropy, 4)
             
-            # CHECK 1: The "Broken Record" Filter (New!)
+            # CHECK 1: The "Broken Record" Filter
             if mass_score == 0.0:
                 verdict = "COLLAPSE"
             # CHECK 2: Standard Physics
