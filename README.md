@@ -1,7 +1,3 @@
-Location: Root folder. This is the updated documentation with the science we proved.
-
-Markdown
-
 # TruthEnforcer: Topological Semantic Consistency Engine
 
 **Version:** 0.2.0 (The "Trojan Horse" Release)
