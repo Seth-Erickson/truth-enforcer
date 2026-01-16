@@ -1,25 +1,33 @@
-# TruthEnforcer: 
-- Topological Hallucination DetectionStatus:
--	Experimental / Active ResearchVersion: 0.1.0
--	(Alpha)License: Apache 2.0🔬
--	The Science: Semantic PhysicsTruthEnforcer is a Python library that detects "Hallucinated Drift" in Large Language Models by measuring the geometric stability of their output.It relies on the Semantic Physics Model (SPM), which posits that factual statements possess higher "Semantic Mass" (topological cohesion) than hallucinations.The "HalluZig" MetricTraditional evaluations check grammar (which LLMs fake perfectly). TruthEnforcer checks topology.Ingestion: Splits text into semantic units (sentences).
--	Vectorization: Embeds units into high-dimensional space (all-MiniLM-L6-v2).
--	1Manifold Projection: dynamic PCA reduces ambient noise (Curse of Dimensionality mitigation).
--	Filtration: A Vietoris-Rips filtration computes the Persistent Homology ($H_0$) of the semantic cloud.
--	Entropy Calculation: The system sums the lifespans of connected components to derive a Semantic Mass Score.🧪
--	Empirical Evidence in controlled stress tests ($N=100$), this method successfully distinguished between "Hard Science" (Truth) and "Corporate Fluff
--	(Hallucination/Drift) with a detectable Delta of 0.1730.
--	Truth Entropy: ~0.85 (High Mass / Tight Cluster)Hallucination Entropy: ~0.93 (Low Mass / Gaseous Cloud)
--	💻 UsageBashpip install sentence-transformers ripser scikit-learn numpy
--	Pythonfrom truth_enforcer import TruthEnforcer
+# TruthEnforcer: Topological Semantic Consistency Engine
 
-## Initialize the Spectrometer
-lab = TruthEnforcer()
+**Version:** 0.2.0 (The "Trojan Horse" Release)
+**Author:** Axion Research
+**License:** Apache 2.0
 
-### Scan a text
-text = "Gravity is a fundamental force. It binds the universe."
-result = lab.scan(text)
+> "Truth is a geometric property. Lies are topological holes."
 
-print(result)
-# Output: {'status': 'PASS', 'mass_score': 0.8531, 'tier': 'SOLID'}
-🛡️ Roadmap[x] Phase 1: Topological Entropy Calculation ($H_0$)[ ] Phase 2: Rhetorical Force Vectorization ($\vec{F}_r$)[ ] Phase 3: Integration with axion-os Event Bus. 
+## 🔬 The Science
+TruthEnforcer is not a fact-checker. It is a **Coherence Engine**.
+
+It uses **Topological Data Analysis (TDA)** and **Persistent Homology** to map the "Semantic Shape" of a text block.
+- **High Mass (Low Entropy):** The text is focused, logically connected, and stays on topic.
+- **Gaseous (High Entropy):** The text is drifting, hallucinating, or suffering from "Dream Logic."
+
+### The "Trojan Horse" Discovery
+Most hallucination detectors fail because they look for "wrong facts." TruthEnforcer looks for **"broken geometry."**
+
+In our internal stress tests (Jan 2026), we injected a "Trojan Horse" (a coherent but irrelevant sentence) into a factual paragraph.
+
+| Test Subject | Description | Entropy Score | Verdict |
+| :--- | :--- | :--- | :--- |
+| **Control** | A consistent paragraph about Coffee cultivation. | `0.8144` | ✅ SOLID |
+| **Trojan Horse** | The same paragraph with a sentence about Napoleon inserted. | `0.9332` | ⚠️ UNSTABLE |
+
+**Result:** The tool successfully detected the "Topic Drift" caused by the lie, even though the lie itself was grammatically perfect.
+
+## 🛠️ Installation
+
+```bash
+git clone [https://github.com/Seth-Erickson/truth-enforcer.git](https://github.com/Seth-Erickson/truth-enforcer.git)
+cd truth-enforcer
+pip install .
