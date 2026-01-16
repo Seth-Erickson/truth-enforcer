@@ -7,7 +7,7 @@ setup(
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="Seth Erickson",  
-    author_email="Manifold.tinket389@passmail.com",
+    author_email="Manifold.tinker389@passmail.com",
     url="https://github.com/Seth-Erickson/truth-enforcer",
     py_modules=["truth_enforcer"], 
     install_requires=[
