@@ -31,23 +31,23 @@ In our internal stress tests (Jan 2026), we injected a "Trojan Horse" (a coheren
 git clone [https://github.com/Seth-Erickson/truth-enforcer.git](https://github.com/Seth-Erickson/truth-enforcer.git)
 cd truth-enforcer
 pip install .
+```
 🚀 Usage (CLI)
 1. Quick Scan (String)
-```
-```
-Bash
+
+```Bash
 
 python truth_enforcer.py "Gravity is consistent. It binds matter together."
+```
 2. Deep Scan (File)
-```
-```
-Bash
+
+```Bash
 
 python truth_enforcer.py -f my_manifesto.txt
+```
 3. Pipeline Mode (JSON Output)
-```
-```
-Bash
+
+```Bash
 
 python truth_enforcer.py -f suspicious_bot_output.txt --json
 ```
